@@ -1,0 +1,3 @@
+altitude_core_homepage:
+    path:     /
+    defaults: { _controller: AltitudeCoreBundle:Core:index }

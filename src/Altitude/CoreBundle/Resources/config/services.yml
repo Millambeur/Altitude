@@ -1,0 +1,4 @@
+services:
+#    altitude_core.example:
+#        class: Altitude\CoreBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
