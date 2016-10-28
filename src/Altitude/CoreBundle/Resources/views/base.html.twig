@@ -1,8 +1,30 @@
 {# src/CoreBundle/Ressources/views/base.html.twig #}
 {% extends 'base.html.twig' %}
 
-        {% block body %}
-            {% block header %}{% endblock %}
-            {% block content %}{% endblock %}
-            {% block footer %}{% endblock %}
+		{% block title %}Altitude{% endblock %}
+
+		{% block stylesheets %}
+	      	{% stylesheets filter='cssrewrite, ?scssphp'
+	      		'bundles/altitudecore/css/coreMain.css' %}
+	        	<link rel="stylesheet" href="{{ asset('bundles/altitudecore/css/coreMain.css') }}" type="text/css" />
+	      	{% endstylesheets %}
+	  {% endblock %}
+
+    {% block body %}
+      <div class="container">
+        {% block header %}
+  			 {{ include("AltitudeCoreBundle:Core:header.html.twig") }}
+		    {% endblock %}
+        {% block content %}{% endblock %}
+        {% block footer %}
+        	{{ include("AltitudeCoreBundle:Core:footer.html.twig") }}
         {% endblock %}
+      </div>
+    {% endblock %}
+
+    {% block javascripts %}
+  		{% javascripts filter='?jsqueeze'
+    			'bundles/altitudecore/js/coreMain.js' %}
+    			<script type="text/javascript" src="{{ asset('bundles/altitudecore/js/coreMain.js') }}"></script>
+  		{% endjavascripts %}
+	  {% endblock %}

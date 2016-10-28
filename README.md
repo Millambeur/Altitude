@@ -2,6 +2,10 @@ Altitude
 
 =====================================================
 
+INFOS
+
+url : localhost/Altitude/web/app_dev.php/fr/
+
 INSTALLATION
 
 1 - git clone https://github.com/Millambeur/Altitude.git
@@ -15,3 +19,19 @@ CACHE CLEARING
 
 7 - bash : Altitude~ php bin/console cache:clear --env=dev
 8 - bash : Altitude~ php bin/console cache:clear --env=prod
+
+MODIFICATION TRANSLATIONS
+
+9 - bash : Altitude~ php bin/console translation:update --force fr AltitudeCoreBundle
+
+CREATION BUNDLE
+
+10 - bash : Altitude~ php bin/console generate:bundle
+
+CREATION ENTITY
+
+11 - bash : Altitude~ php bin/console generate:bundle
+
+UPDATE Getters / Setters OF ENTITY
+
+12 - bash : Altitude~ php bin/console doctrine:generate:entities AltitudeCoreBundle:Entity

@@ -1,0 +1,33 @@
+{# src/BlogBundle/Ressources/views/Blog/index.html.twig #}
+{% extends 'AltitudeCoreBundle::base.html.twig' %}
+
+	{% block title %}{{ parent() }} - Blog{% endblock %}
+
+  	{% block stylesheets %}
+		{{ parent() }}
+  	{% endblock %}
+
+
+  	{% block body %}
+    	<div class="container">
+
+    	{% block header %}
+      		{{ parent() }}
+    	{% endblock %}
+
+    	{% block content %}
+	    	<div id="content" class="col-md-9">
+  		  		<p> {{ 'Blog content'|trans }} </p>
+      		</div>
+		{% endblock %}
+
+    	{% block footer %}
+      		{{ parent() }}
+    	{% endblock %}
+
+	{% endblock %}
+
+
+  	{% block javascripts %}
+  		{{ parent() }}
+  	{% endblock %}

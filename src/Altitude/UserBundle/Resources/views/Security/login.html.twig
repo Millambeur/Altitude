@@ -1,0 +1,8 @@
+{# src/Altitude/UserBundle/Resources/views/Security/login.html.twig #}
+{% extends 'AltitudeUserBundle::layout.html.twig' %}
+
+	{% block fos_user_content %}
+		<div id="content" class="col-md-9">
+			{{ include('AltitudeUserBundle:Security:login_content.html.twig') }}
+		</div>
+	{% endblock fos_user_content %}

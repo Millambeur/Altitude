@@ -19,6 +19,7 @@ class AppKernel extends Kernel
             new FOS\UserBundle\FOSUserBundle(),
             new Altitude\CoreBundle\AltitudeCoreBundle(),
             new Altitude\UserBundle\AltitudeUserBundle(),
+            new Altitude\BlogBundle\AltitudeBlogBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

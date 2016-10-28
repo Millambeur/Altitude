@@ -1,0 +1,3 @@
+altitude_blog_homepage:
+    path:     /
+    defaults: { _controller: AltitudeBlogBundle:Blog:index }
