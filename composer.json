@@ -2,6 +2,7 @@
     "name": "xfch/altitude",
     "license": "proprietary",
     "type": "project",
+    "description": "Project test to train Symfony Developement",
     "autoload": {
         "psr-4": {
             "": "src/"
